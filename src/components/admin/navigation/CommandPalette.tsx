@@ -162,11 +162,10 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose 
                 <div
                   key={idx}
                   onClick={() => handleSelect(item.path)}
-                  className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl cursor-pointer transition-colors ${
-                    idx === selectedIndex
+                  className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl cursor-pointer transition-colors ${idx === selectedIndex
                       ? 'bg-brand-50/80 dark:bg-brand-950/40 text-brand-900 dark:text-white'
                       : 'hover:bg-slate-50 dark:hover:bg-navy-800 text-slate-700 dark:text-slate-300'
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center gap-3 min-w-0">
                     <div className="p-1.5 rounded-lg bg-slate-100 dark:bg-navy-800 text-slate-500 dark:text-slate-400 shrink-0">
@@ -206,7 +205,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose 
               ENTER
             </kbd>
           </div>
-          <span className="font-mono text-[11px]">CodeForge Omni-Search</span>
+          <span className="font-mono text-[11px]">CodeShah Omni-Search</span>
         </div>
       </div>
     </div>
